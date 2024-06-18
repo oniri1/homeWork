@@ -1,0 +1,71 @@
+body {
+  display: flex;
+
+  /* 계산기 중앙에 놓기 */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: gray;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #bababa;
+  width: 300px;
+}
+
+.display {
+  background-color: black;
+  color: white;
+  font-size: 2.5em;
+  /* text-align: right; */
+  padding: 10px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inputs {
+  display: flex;
+}
+
+#nums {
+  flex: 0.75;
+}
+#operations {
+  flex: 0.25;
+}
+.btn-boxs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 25px;
+
+  font-size: 1.5em;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#operations.btn-boxs .btn-box .btn {
+  background-color: rgba(210, 105, 30, 1);
+}
+
+#operations.btn-boxs .btn-box .btn:hover {
+  background-color: rgba(210, 105, 30, 0.5);
+}
